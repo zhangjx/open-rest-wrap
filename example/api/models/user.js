@@ -1,5 +1,7 @@
 const ModelBase = require('./base');
 
+const { Sequelize } = global.restapi;
+
 module.exports = (sequelize) => {
   return _.extend(sequelize.define('user', {
     id: {
@@ -18,7 +20,7 @@ module.exports = (sequelize) => {
       type: Sequelize.STRING(100),
       allowNull: false,
       validate: {
-        isEmail: true
+        isEmail: true,
       },
       unique: true,
       comment: '用户email地址',
