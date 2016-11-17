@@ -1,6 +1,6 @@
 {
   "name": "open-rest-wrap",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Rest server, based on open-rest.",
   "main": "index.js",
   "author": "zhangjx1990@gmail.com",
@@ -31,7 +31,8 @@
     "lodash": "4.16.6",
     "mysql": "2.12.0",
     "moment": "2.16.0",
-    "open-router": "0.2.0",
+    "open-rest-wrap-helpers": "0.3.0",
+    "open-rest-wrap-router": "0.2.0",
     "restify": "4.3.0",
     "sequelize": "3.25.0",
     "winston": "2.3.0"

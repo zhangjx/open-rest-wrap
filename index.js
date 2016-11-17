@@ -1,1 +1,1 @@
-module.exports = require('./lib/open-rest-wrap');
+module.exports = require('./lib/application');
