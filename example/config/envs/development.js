@@ -6,7 +6,7 @@ config.service = {
   version: config.server.version,
   port: 8008,
   ip: '0.0.0.0',
-  test: 'hhhhhhhhhhhhhhhhhhhh',
 };
+config.port = 8008;
 
 module.exports = config;

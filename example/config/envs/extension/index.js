@@ -42,7 +42,6 @@ module.exports = {
     pass: 'root',
     dialect: 'mysql',
     dialectOptions: {
-      // 这两个值必须要有，否则转入进来的旧广告位id和创意id无法处理
       supportBigNumbers: true,
     },
     logging: false,

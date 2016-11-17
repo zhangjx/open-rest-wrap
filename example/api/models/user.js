@@ -1,19 +1,5 @@
 const ModelBase = require('./base');
 
-console.log('model');
-console.log(_.VERSION);
-
-// const CHECK_PASS_ERROR = Error('Password or Email error.');
-// const USER_STATUS_ERROR = Error('User had disabled.');
-// const USER_DELETED_ERROR = Error('User had deleted.');
-// const AVATAR_ROOT = config.avatar.uri
-
-// const CALC_PASS = (user) => {
-//   if ((user.changed().indexOf('password') > -1) || (user.isNewRecord))  {
-//     user.password = user.calcPass(user.password);
-//   }
-// };
-
 module.exports = (sequelize) => {
   return _.extend(sequelize.define('user', {
     id: {
