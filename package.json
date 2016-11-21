@@ -31,6 +31,7 @@
     "lodash": "4.16.6",
     "mysql": "2.12.0",
     "moment": "2.16.0",
+    "morgan": "1.7.0",
     "open-rest-wrap-helpers": "0.3.0",
     "open-rest-wrap-router": "0.2.0",
     "restify": "4.3.0",
