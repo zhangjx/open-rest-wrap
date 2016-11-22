@@ -20,9 +20,12 @@ module.exports = {
     Sequelize: true,
   },
   coreMiddlewares: {
+    acceptParser: true,
     queryParser: true,
     bodyParser: true,
+    ipFilter: true,
     charset: true,
+    accessLog: true,
   },
   externalMiddlewares: {
     console: true,
@@ -60,6 +63,10 @@ module.exports = {
       // 单位毫秒
       idle: 300 * 1000,
     },
+  },
+  ipFilter: {
+    whiteList: [ ],
+    blackList: [ ],
   },
   // bodyParser: {
   //   maxBodySize: 0,

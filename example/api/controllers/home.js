@@ -16,7 +16,7 @@ module.exports = {
   // },
 
   users: () => [
-    restapi.helpers.console.error('sys conole'),
+    restapi.helpers.console.info('sys conole'),
     restapi.helpers.user.test(),
     (req, res, next) => {
       restapi.models.user.findAll().then((users) => {
