@@ -33,7 +33,7 @@
     "moment": "2.16.0",
     "morgan": "1.7.0",
     "open-rest-wrap-helpers": "0.4.1",
-    "open-rest-wrap-router": "0.2.0",
+    "open-rest-wrap-router": "0.3.0",
     "restify": "4.3.0",
     "sequelize": "3.25.0",
     "winston": "2.3.0"
