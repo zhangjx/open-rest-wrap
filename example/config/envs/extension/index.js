@@ -30,9 +30,6 @@ module.exports = {
   externalMiddlewares: {
     console: true,
   },
-  queryParser: {
-    mapParams: false,
-  },
   database: {
     host: '127.0.0.1',
     port: 3306,
@@ -65,13 +62,16 @@ module.exports = {
     },
   },
   ipFilter: {
-    whiteList: [ ],
-    blackList: [ ],
+    whiteList: [],
+    blackList: [],
   },
   // bodyParser: {
   //   maxBodySize: 0,
   //   mapParams: true,
   //   overrideParams: false,
+  // },
+  // queryParser: {
+  //   mapParams: true,
   // },
   // charset: {
   //   charset: 'utf-8',

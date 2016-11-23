@@ -21,7 +21,7 @@ module.exports = {
     const User = restapi.models('user');
     return [
       restapi.helpers.console.info('I an user route'),
-      restapi.helpers.user.list(User),
+      restapi.helpers.rest.list(User),
     ];
   },
 };
