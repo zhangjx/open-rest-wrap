@@ -1,24 +1,25 @@
 module.exports = {
-  server: {
-    // web server 的一些信息
-    name: 'PlanMaster API',
-    version: '0.1.0',
-    host: 'localhost',
-    port: 9988,
+  // web server 的一些信息
+  name: 'PlanMaster API',
+  host: 'localhost',
+  port: 8008,
 
-    // 站点地址
-    siteUrl: 'http://www.planning.com',
+  // 站点地址
+  siteUrl: 'http://www.planning.com',
 
-    // 时间，日期格式化的格式
-    dateFormat: 'YYYY-MM-DD',
-    dateTimeFormat: 'YYYY-MM-DD HH:mm:ss',
-  },
+  // 时间，日期格式化的格式
+  dateFormat: 'YYYY-MM-DD',
+  dateTimeFormat: 'YYYY-MM-DD HH:mm:ss',
+
+  // 可在全局访问的 module
   globals: {
     _: true,
     async: true,
     mysql: true,
     Sequelize: true,
   },
+
+  // 核心内置 中间件开关 和顺序
   coreMiddlewares: {
     acceptParser: true,
     queryParser: true,
@@ -27,9 +28,21 @@ module.exports = {
     charset: true,
     accessLog: true,
   },
+
+  // 自定义 中间件 开关和顺序
   externalMiddlewares: {
     console: true,
   },
+
+  // 路由相关设置
+  route: {
+    // 展示 所有API 列表
+    apis: '/apis',
+    // 公开访问的路由
+    publicRoutes: [],
+  },
+
+  // 数据库相关配置
   database: {
     host: '127.0.0.1',
     port: 3306,
@@ -61,6 +74,8 @@ module.exports = {
       idle: 300 * 1000,
     },
   },
+
+  // IP 过滤配置
   ipFilter: {
     whiteList: [],
     blackList: [],
