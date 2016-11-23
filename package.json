@@ -1,6 +1,6 @@
 {
   "name": "open-rest-wrap",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "Rest server, based on open-rest.",
   "main": "index.js",
   "author": "zhangjx1990@gmail.com",
