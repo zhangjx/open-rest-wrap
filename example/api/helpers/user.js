@@ -1,14 +1,13 @@
-
-const test = () => {
-  return (req, res, next) => {
-    console.info(req.ips);
-    console.info(req.ip);
-    console.info(req.isPrivateIP);
-    console.info('test user');
-    return next();
-  };
-};
-
 module.exports = {
-  test,
+  list(Model) {
+    console.log('I am user list helper');
+    return (req, res, next) => {
+      Model.findAll().then((users) => {
+        users = _.map(users, (u) => u.toJSON());
+        // console.log(users);
+        res.send(users);
+        return next();
+      });
+    };
+  },
 };

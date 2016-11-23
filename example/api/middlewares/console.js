@@ -6,7 +6,7 @@ module.exports = (restapi) => {
 
     initialize: (cb) => {
       restapi.app.use((req, res, next) => {
-        console.log('custom middleware!!!');
+        restapi.log.info('custom middleware!!!');
         return next();
       });
 
