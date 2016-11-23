@@ -1,9 +1,9 @@
 module.exports = {
   // 分页设定
   pagination: {
-    maxResults: 10,
-    maxResultsLimit: 5000,
-    maxStartIndex: 500000,
+    limit: 10,
+    maxLimit: 5000,
+    maxOffset: 500000,
   },
 
   // sort 设定

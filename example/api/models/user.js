@@ -78,6 +78,7 @@ module.exports = (sequelize) => {
     unique: ['email'],
     sort: {
       default: 'createdAt',
+      defaultDirection: 'ASC',
       allow: ['id', 'name', 'email', 'status', 'updatedAt', 'createdAt'],
     },
     writableCols: [
