@@ -6,7 +6,8 @@
   "author": "zhangjx1990@gmail.com",
   "license": "MIT",
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=6.9.0",
+    "npm": ">=3.0.0"
   },
   "scripts": {
     "test": "./node_modules/mocha/bin/_mocha"
