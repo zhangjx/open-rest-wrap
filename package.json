@@ -1,7 +1,7 @@
 {
   "name": "open-rest-wrap",
-  "version": "0.6.1",
-  "description": "Rest server, based on open-rest.",
+  "version": "0.7.0",
+  "description": "RESTful API server, based on open-rest.",
   "main": "index.js",
   "author": "zhangjx1990@gmail.com",
   "license": "MIT",
