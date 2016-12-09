@@ -1,3 +1,5 @@
+const _ = require('lodash');
+
 module.exports = {
   list(Model) {
     console.log('I am user list helper');

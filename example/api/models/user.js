@@ -1,3 +1,4 @@
+const _ = require('lodash');
 const ModelBase = require('./base');
 
 const { Sequelize } = global.restapi;

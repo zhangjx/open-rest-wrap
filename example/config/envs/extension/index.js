@@ -11,14 +11,6 @@ module.exports = {
   dateFormat: 'YYYY-MM-DD',
   dateTimeFormat: 'YYYY-MM-DD HH:mm:ss',
 
-  // 可在全局访问的 module
-  globals: {
-    _: true,
-    async: true,
-    mysql: true,
-    Sequelize: true,
-  },
-
   // 核心内置 中间件开关 和顺序
   coreMiddlewares: {
     acceptParser: true,
