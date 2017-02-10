@@ -54,6 +54,7 @@ module.exports = (sequelize) => {
     },
   }, {
     comment: '系统用户表',
+    tableName: 'user2',
     freezeTableName: true,
     // hooks: {
     //   beforeValidate: (user) => {

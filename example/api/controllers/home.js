@@ -1,5 +1,3 @@
-// User = restapi.model('user');
-
 module.exports = {
   index() {
     return (req, res, next) => {
